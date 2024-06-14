@@ -57,6 +57,7 @@ const HomePage = () => {
               }) => {
                 return (
                   <Card
+                  key={id}
                     id={id}
                     name={name}
                     image={image}
