@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import GoogleAdsense from "@/components/GoogleAdsense";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-[#111315] text-white ${inter.className} antialiased`}>{children}</body>
+      <body
+        className={`bg-[#111315] text-white ${inter.className} antialiased`}
+      >
+        {children}
+      </body>
+      <GoogleAdsense pId="6977475324421882" />
     </html>
   );
 }
